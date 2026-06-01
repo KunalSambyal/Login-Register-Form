@@ -132,7 +132,15 @@ body {
     );
 }
 
-.otherLoginMethod {
+.createAccBtn {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 5%);
+}
+.createAccBtn:hover {
+    background-color: hsl(0, 0%, 95%);
+}
+
+/* .otherLoginMethod {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -164,7 +172,7 @@ body {
 }
 .gitHubBtn:hover {
     background-color: hsl(0, 0%, 15%);
-}
+} */
 
 @media screen and (max-width: 400px) {
     .container {
