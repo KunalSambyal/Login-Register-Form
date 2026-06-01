@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="javascript">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log in - Welcome</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="msgContainer">
+                <p class="welcomeMsg">Welcome Back</p>
+                <p class="loginMsg">Log in to continue</p>
+            </div>
+            <div class="userInput">
+                <form action="#" class="form">
+                    <input
+                        type="email"
+                        id="userEmail"
+                        class="inputText"
+                        placeholder="Email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        id="userPassword"
+                        class="inputText"
+                        placeholder="Password"
+                        required
+                    />
+                </form>
+                <div class="forgotPass">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button class="continueBtn formBtns" id="continueBtn">Continue</button>
+                <div class="otherLoginMethod">
+                    <p>Continue with other method</p>
+                    <div class="otherBtn">
+                        <button class="formBtns googleBtn">Google</button>
+                        <button class="formBtns gitHubBtn">GitHub</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>

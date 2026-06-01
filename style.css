@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        hsl(317, 76%, 47%),
+        hsl(293, 87%, 56%),
+        hsl(284, 68%, 52%)
+    );
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 4px 4px 24px hsla(0, 0%, 0%, 0.4);
+    max-width: 400px;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.msgContainer {
+    width: 100%;
+}
+.welcomeMsg {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.loginMsg {
+    color: hsl(0, 0%, 40%);
+}
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.inputText {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(
+            to right,
+            hsl(317, 76%, 47%),
+            hsl(293, 87%, 56%),
+            hsl(284, 68%, 52%)
+        )
+        1;
+    font-size: 14px;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.inputText:hover {
+    transform: scale(1.01);
+}
+.inputText:focus {
+    outline: none;
+    transform: scale(1.03);
+}
+
+.forgotPass a {
+    font-size: 14px;
+    text-decoration: none;
+    color: transparent;
+    background: linear-gradient(
+        to right,
+        hsl(317, 76%, 47%),
+        hsl(293, 87%, 56%),
+        hsl(284, 68%, 52%)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.formBtns {
+    border: none;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.2);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.formBtns:hover {
+    transform: scale(1.01);
+}
+.formBtns:active {
+    transform: scale(1.03);
+}
+
+.continueBtn {
+    background-image: linear-gradient(
+        to right,
+        hsl(317, 76%, 47%),
+        hsl(293, 87%, 56%),
+        hsl(284, 68%, 52%)
+    );
+}
+.continueBtn:hover {
+    background-image: linear-gradient(
+        to right,
+        hsl(317, 76%, 57%),
+        hsl(293, 87%, 66%),
+        hsl(284, 68%, 62%)
+    );
+}
+
+.otherLoginMethod {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.otherLoginMethod p {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    color: hsl(0, 0%, 40%);
+}
+
+.otherLoginMethod .otherBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.googleBtn {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 5%);
+}
+
+.gitHubBtn {
+    background-color: hsl(0, 0%, 5%);
+}
