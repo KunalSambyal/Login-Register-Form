@@ -156,7 +156,13 @@ body {
     background-color: hsl(0, 0%, 100%);
     color: hsl(0, 0%, 5%);
 }
+.googleBtn:hover {
+    background-color: hsl(0, 0%, 95%);
+}
 
 .gitHubBtn {
     background-color: hsl(0, 0%, 5%);
+}
+.gitHubBtn:hover {
+    background-color: hsl(0, 0%, 15%);
 }
