@@ -13,7 +13,7 @@
                 <p class="loginMsg">Log in to continue</p>
             </div>
             <div class="userInput">
-                <form action="#" class="form">
+                <form action="/submit" class="form">
                     <input
                         type="email"
                         id="userEmail"
@@ -28,11 +28,18 @@
                         placeholder="Password"
                         required
                     />
+                    <div class="forgotPass">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button
+                        type="submit"
+                        class="continueBtn formBtns"
+                        id="continueBtn"
+                    >
+                        Continue
+                    </button>
                 </form>
-                <div class="forgotPass">
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button class="continueBtn formBtns" id="continueBtn">Continue</button>
+
                 <div class="otherLoginMethod">
                     <p>Continue with other method</p>
                     <div class="otherBtn">
