@@ -121,7 +121,7 @@ body {
     background-color: hsl(0, 0%, 95%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     .container {
         height: 100%;
         justify-content: center;
