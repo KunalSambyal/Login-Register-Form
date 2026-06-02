@@ -29,40 +29,31 @@ body {
     box-shadow: 4px 4px 24px hsla(0, 0%, 0%, 0.4);
     max-width: 400px;
     width: 100%;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.6rem;
 }
 
-.msgContainer {
+.mainHeading {
     width: 100%;
-}
-.welcomeMsg {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-.loginMsg {
-    color: hsl(0, 0%, 40%);
+    text-align: center;
+    font-size: 16px;
 }
 
-.userInput {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.formContainer {
     width: 100%;
 }
 
-.form {
+.registerForm {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
-.inputText {
-    width: 100%;
+.inputField {
     padding: 8px 0;
     border: none;
     border-bottom: 2px solid transparent;
@@ -70,24 +61,15 @@ body {
     font-size: 14px;
     transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.inputText:hover {
+.inputField:hover {
     transform: scale(1.01);
 }
-.inputText:focus {
+.inputField:focus {
     outline: none;
     transform: scale(1.03);
 }
 
-.forgotPass a {
-    font-size: 14px;
-    text-decoration: none;
-    color: transparent;
-    background: linear-gradient(to right, var(--main-gradient));
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.formBtns {
+#registerBtn {
     border: none;
     width: 100%;
     padding: 12px 0;
@@ -98,37 +80,26 @@ body {
     cursor: pointer;
     box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.2);
     transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.formBtns:hover {
-    transform: scale(1.01);
-}
-.formBtns:active {
-    transform: scale(1.03);
-}
-
-.continueBtn {
     background-image: linear-gradient(to right, var(--main-gradient));
 }
-.continueBtn:hover {
+#registerBtn:hover {
+    transform: scale(1.01);
     background-image: linear-gradient(to right, var(--hover-gradient));
 }
-
-.createAccBtn {
-    background-color: hsl(0, 0%, 100%);
-    color: hsl(0, 0%, 5%);
-}
-.createAccBtn:hover {
-    background-color: hsl(0, 0%, 95%);
+#registerBtn:active {
+    transform: scale(1.03);
 }
 
 @media screen and (max-width: 400px) {
     .container {
         height: 100%;
-        justify-content: center;
         padding: 2rem 1rem;
         border-radius: 0;
     }
-    .formBtns {
+    .registerForm {
+        justify-content: center;
+    }
+    #registerBtn {
         padding: 8px 0;
     }
 }

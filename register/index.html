@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="mainHeading">
+                <h1>Register</h1>
+            </div>
+            <div class="formContainer">
+                <form action="/submit" class="registerForm">
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        class="inputField"
+                        required
+                        placeholder="First Name"
+                    />
+                    <input
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                        class="inputField"
+                        placeholder="Last Name"
+                    />
+                    <input
+                        type="email"
+                        name="userEmail"
+                        id="userEmail"
+                        class="inputField"
+                        required
+                        placeholder="Email"
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        id="userPassword"
+                        class="inputField"
+                        required
+                        placeholder="Password"
+                    />
+                    <button type="submit" id="registerBtn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
